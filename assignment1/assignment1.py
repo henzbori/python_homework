@@ -25,15 +25,15 @@ def calc(x, y, operator = "multiply"):
                 return x - y
             case "multiply":
                 return x * y
-            case "divide":
-                if y == 0:
-                    raise ZeroDivisionError
+            # case "divide":
+            #     if y == 0:
+            #         raise ZeroDivisionError
                 return x / y
             case "modulo":
                 return x % y
-            case "int_divide":
-                if y == 0:
-                    raise ZeroDivisionError
+            # case "int_divide":
+            #     if y == 0:
+            #         raise ZeroDivisionError
                 return x // y
             case "power":
                 return x ** y
@@ -56,8 +56,8 @@ def  data_type_conversion(value, type):
             return float(value)
         elif type == "str":
             return str(value)
-        else:
-            raise ValueError
+        # else:
+        #     raise ValueError
     except ValueError:
         return f"You can't convert {value} into a {type}."
    
