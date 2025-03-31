@@ -4,7 +4,7 @@ import traceback
 
 try:
     with open('diary.txt', 'a') as file:
-        content = input("What happened today?")
+        content = input("What happened today?\n")
         file.write(content + "\n") 
         while True:
             content = input("What else?")

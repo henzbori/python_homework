@@ -158,10 +158,13 @@ print("minutes_list", minutes_list)
 def write_sorted_list():
     sorted_minutes = sorted(minutes_list, key=lambda x: x[1])
     converted_list = list(map(lambda x: (x[0], datetime.strftime(x[1], "%B %d, %Y")), sorted_minutes))
-    with open('./minutes.csv', 'w', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow(minutes1["fields"])
-        writer.writerow(converted_list)
-    return converted_list
-
+    try:
+        with open('./minutes.csv', 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(minutes1["fields"])
+            writer.writerow(converted_list)
+        return converted_list
+    except Exception as e:
+        print(f'An error occurred while writting the file: {e}')
+        
 write_sorted_list()
