@@ -1,0 +1,15 @@
+function: greeting
+positional parameters: none
+keyword parameters: none
+return: None
+
+function: pos_args
+positional parameters: (17, 4, 64)
+keyword parameters: none
+return: True
+
+function: keyword_args
+positional parameters: none
+keyword parameters: {'a': 2, 'b': 7}
+return: <function logger_decorator at 0x100540360>
+
