@@ -1,0 +1,12 @@
+Which sections of the website are restricted for crawling?
+    Disallow: /w/
+    Disallow: /api/
+    Disallow: /trap/
+    Disallow: /wiki/Special:...
+
+Are there specific rules for certain user agents?
+    For all bots it needs to be delay between hits, not allowed dynamically-generated pages.
+    There are some exceptions for API mobileview and REST APT documentation.
+
+Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how it promotes ethical scraping. 
+    The purpose is to protects from server overload and some sensitive data. As well as helping to control the traffic on Wikipedia site.
